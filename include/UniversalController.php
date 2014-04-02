@@ -12,7 +12,7 @@ class UniversalController{
 		*	To Create DB Connection
 		*
 		$universalDB = new UniversalDB();
-		$universalDB->init("localhost", "root", "root");
+		$universalDB->init("localhost", "root", "password");
 		$universalDB->connect();
 		*/
 	}
