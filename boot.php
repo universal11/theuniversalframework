@@ -12,6 +12,9 @@ $debugMode = ( (empty($request->debug)) ? false : $request->debug );
 if($debugMode){
 	error_reporting(E_ALL);
 	ini_set('display_errors', 1);
+	echo "/// REQUEST ///<br>\r\n<br>\r\n";
+	print_r($request);
+	echo "<br>\r\n<br>\r\n<br>\r\n";
 }
 
 //
