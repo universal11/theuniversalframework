@@ -17,6 +17,15 @@ if($debugMode){
 	echo "<br>\r\n<br>\r\n<br>\r\n";
 }
 
+
+//
+// Set DB Connection
+//
+
+$dbConnection = new UniversalDB();
+$dbConnection->init("theuniversalframework.com", "universal_app", "h8rsg0nnah811");
+//$universalDB->connect();
+
 //
 // Route Handler
 //
@@ -34,11 +43,11 @@ if(!empty($request->controller)){
 				$action = $request->action;
 				if(method_exists($controller, $action)){
 					if($debugMode){ echo "{$action} executed...<br>\r\n"; }
-					$controller->{$action}($request);
+					$controller->{$action}($request, $dbConnection);
 				}
 			}
 			else{
-				$controller->main($request);
+				$controller->init($request);
 			}
 		}
 	}
