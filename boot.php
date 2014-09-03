@@ -1,9 +1,4 @@
 <?php
-define("FRAMEWORK_DIR", dirname(__FILE__));
-
-include(FRAMEWORK_DIR . "/include/UniversalDB.php");
-include(FRAMEWORK_DIR . "/include/UniversalModel.php");
-include(FRAMEWORK_DIR . "/include/UniversalController.php");
 
 $request = (object)$_REQUEST;
 
