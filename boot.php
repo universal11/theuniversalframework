@@ -1,5 +1,6 @@
 <?php
 define("FRAMEWORK_DIR", dirname(__FILE__));
+
 include(FRAMEWORK_DIR . "/include/UniversalDB.php");
 include(FRAMEWORK_DIR . "/include/UniversalModel.php");
 include(FRAMEWORK_DIR . "/include/UniversalController.php");
@@ -18,13 +19,6 @@ if($debugMode){
 }
 
 
-//
-// Set DB Connection
-//
-
-$dbConnection = new UniversalDB();
-$dbConnection->init("theuniversalframework.com", "universal_app", "h8rsg0nnah811");
-//$universalDB->connect();
 
 //
 // Route Handler

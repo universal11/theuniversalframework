@@ -7,7 +7,7 @@ class UniversalDB{
 	private $connection;
 
 	public function __construct(){
-
+		
 	}
 
 	public function init($host, $user, $password){
